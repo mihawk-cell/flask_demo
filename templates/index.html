@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Welcome to Flask Demo!</h1>
+<p>Try visiting <a href="{{ url_for('greet') }}">/greet</a> or <a href="{{ url_for('greet', name='YourName') }}">/greet/YourName</a></p>
+{% endblock %}
